@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>ACADEMIA DE BALLET</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Courgette&family,wght@0,600;1,300&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" type="image/x-icon" href="img/icono.jpg">
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<style>
+		label{
+			font-weight: bold;
+		}
+		input[type=search]{
+			border: 2px dotted #2F9C88;
+			border-radius: 20px;
+			appearance: none;
+		}
+		input, select, textarea{
+			font-family: tahoma;
+			font-size: 100;
+		}
+		input, textarea, select{
+			width: 150px;
+			margin: 0;
+			box-sizing: border-box;
+			border-radius: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Registro de Ballet</h1>
+	<form action="" method="post" autocomplete="">
+
+		<h2>Completa el formulario</h2>
+
+		<h3>Ingresa tu nombre</h3>
+		<label form="nombre">Nombre:</label><br>
+		<input type="text" name="nombre" size="20" maxlength="15" placeholder="Nombre">
+		<br>
+
+		<h3>Género</h3>
+		<input type="radio" name="sexo" id="s1" value="Masculino" checked>Masculino <br>
+		<input type="radio" name="sexo" id="s2" value="Femenino">Femenino <br>
+		<br>
+
+		<h3>Fecha de nacimiento</h3>
+		<label form="nombre">Fecha:</label><br>
+		<input type="date" name="fecha" id="fecha" min="1991-01-01">
+		<br>
+
+		<h3>Correo electrónico</h3>
+		<label form="email">Email:</label><br>
+		<input type="email" name="email" id="email" autocomplete="off" required="">
+		<br>
+
+		<h3>Número de teléfono</h3>
+		<label form="numero">Número:</label><br>
+		<input type="text" name="numero" size="10" maxlength="10" placeholder="Número">
+		<br>
+
+		<h3>Ingresa la fecha y hora de registro</h3>
+		<label form="datetime">Fecha - Hora</label><br>
+		<input type="datetime-local" name="fechaHora" id="fechaHora" min="2020-09-06">
+		<br>
+
+		<h3>Selecciona tu tipo de baile favorito</h3>
+		<label form="metodo">Método:</label><br>
+		<select name="metodo" id="metodo">
+			<option value="ruso">Ruso</option>
+			<option value="italiano">Italiano</option>
+			<option value="frances" selected>Francés</option>
+			<option value="danes" >Danés</option>
+		</select>
+		<br>
+
+		<h3>Frecuencia con la que bailas</h3>
+		<label form="frecuencia">Frecuencia:</label><br>
+		<input type="range" name="rango" id="rango" min="0" max="10">
+		<br>
+
+		<h3>Tiempo que prácticas</h3>
+		<input type="radio" name="tiempo" id="t1" value="1 hora" checked>1 Hora <br>
+		<input type="radio" name="tiempo" id="t2" value="2 horas">2 Horas <br>
+		<input type="radio" name="tiempo" id="t4" value="4 horas">4 Horas <br>
+		<br>
+	
+		<h3>Posición que prefieres hacer</h3>
+		<input type="Checkbox" name="posicion1" id="p1" value="1ra posicion">1ra Posición<br>
+		<input type="Checkbox" name="posicion2" id="p2" value="2ra posicion">2ra Posición<br>
+		<input type="Checkbox" name="posicion3" id="p3" value="3ra posicion">3ra Posición<br>
+		<input type="Checkbox" name="posicion4" id="p4" value="4ra posicion">4ra Posición<br>
+		<input type="Checkbox" name="posicion5" id="p5" value="5ra posicion">5ra Posición<br>
+		<input type="Checkbox" name="posicion6" id="p6" value="6ra posicion">6ra Posición<br>
+		<br>
+
+		<h3>¡FOTO TUYA BAILANDO!</h3>
+		<label form="archivo">Archivo:</label><br>
+		<input type="file" name="arc" id="arc" multiple="">
+		<br><br>
+
+		<h3>¿Por qué te gusta bailar?</h3>
+		<textarea name="msg" id="msg" cols="25" rows="5" placeholder="Escribe tu mensaje">
+		</textarea>
+		<br>
+
+		<input type="submit" value="Enviar">
+		<input type="reset" value="Limpiar">
+	</form>
+</body>
+</html>

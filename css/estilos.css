@@ -1,0 +1,40 @@
+font-family: 'Courgette', cursive;
+font-family: 'Open Sans', sans-serif;
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-image: url(../img/fondo.jpg);
+
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  text-align: center;
+  font-family: 'Euphemia' ;
+}
+h1{
+	font-size: 2.5em;
+  	text-align: center;
+  	font-family: 'Courgette';
+ 	color: rgba(1, 0, 0);
+}	
+h2{
+	color: rgba(1, 0, 0);
+}
+h3 {
+	font-weight: normal;
+	font-family: 'sans-serif';
+	color:#16E4BE; 
+    background: rgba(0,0,0,.6);
+ 	max-width: 300px;
+ 	margin:auto;
+ 	padding: 25px 35px;
+ 	margin-top:30px;
+ 	padding-bottom:10px;
+ 	border-radius:50px;
+}
+
